@@ -15,7 +15,6 @@ module.exports = async function(tag, guild, channel) {
           .setColor('#0099ff')
           .setTitle('Feelings Bot')
           .setThumbnail('attachment://feelings.png')
-          // .setAuthor('Feelings', 'attachment://feelings.png')
           .setaddField('Commands','Prefix /\nWelcome\nPing\nHelp\nFeedback\nAdmin\nCount\nBreathe\nHug\nEncouragement\nReddit', true)
           .addBlankField()
           .setaddField('Description', 'Feelings is a discord bot to help people to calm down and relax', true)
