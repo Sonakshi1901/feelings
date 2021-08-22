@@ -7,7 +7,7 @@ module.exports = async function(tag, guild, channel) {
     time = new Date();
 
     console.log('\x1b[32m%s\x1b[0m', `${time}:\n${guild}:\n${tag} Encourage command success\n`);
-   
+
     const jokes = [
       "My fear of moving stairs is escalating",
       "If nothing was learned, nothing was taught",
@@ -17,7 +17,7 @@ module.exports = async function(tag, guild, channel) {
       "Inspecting mirrors is a job I could really see myself doing",
       "Nothing tops a plain pizza."
     ];
-    const rnd = Math.floor(Math.random() * messages.length);
+    const rnd = Math.floor(Math.random() * jokes.length);
     channel.send(jokes[rnd]);
     channel.send('I hope this lifts up your spirit!');
     return;
@@ -27,5 +27,3 @@ module.exports = async function(tag, guild, channel) {
     return;
   }
 }
-
-
